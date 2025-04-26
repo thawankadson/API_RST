@@ -29,21 +29,8 @@ Tratamento de erros
 
 Padrão de estrutura MVC (Model - Controller - Route)
 
-src/
-├── config/
-│   └── database.js     # Configurações de conexão com o banco de dados
-├── controllers/
-│   ├── HomeController.js
-│   └── UserController.js
-├── database/
-│   └── index.js        # Inicialização da conexão com Sequelize
-├── models/
-│   ├── User.js
-│   └── Aluno.js
-├── routes/
-│   └── homeRoutes.js   # Rotas principais da aplicação
-├── app.js              # Inicialização da aplicação Express
-└── server.js           # Arquivo para rodar o servidor
+
+![Captura de tela 2025-04-26 141234](https://github.com/user-attachments/assets/75266438-62c9-42c5-abab-aa61aa2afeb1)
 
 🛠️ Como rodar o projeto
 Clone o repositório:
