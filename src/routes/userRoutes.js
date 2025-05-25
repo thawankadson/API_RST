@@ -1,10 +1,13 @@
 import { Router } from 'express';
 import  homeController  from '../controllers/UserController';
 
+import loginRequired from '../middlewares/loginRequired';
+
 const router = new Router();
 
-router.post('/', homeController.store);
-router.get('/', homeController.index);
+router.get('/', loginRequired, homeController.index);
+//router.post('/', homeController.store);
+
 router.get('/:id', homeController.show);
 router.put('/:id', homeController.update);
 router.delete('/:id', homeController.delete);
