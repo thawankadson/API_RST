@@ -6,11 +6,11 @@ import loginRequired from '../middlewares/loginRequired';
 const router = new Router();
 
 router.get('/', loginRequired, homeController.index);
-//router.post('/', homeController.store);
+router.post('/', loginRequired, homeController.store);
 
 router.get('/:id', homeController.show);
-router.put('/:id', homeController.update);
-router.delete('/:id', homeController.delete);
+router.put('/:id', loginRequired, homeController.update);
+router.delete('/:id', loginRequired, homeController.delete);
 
 
 
